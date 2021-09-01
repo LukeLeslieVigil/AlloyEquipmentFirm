@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
             if (hasShake == true)
             {
                 Debug.Log("You win!");
+                Time.timeScale = 0;
             }         
         }
         if (collision.gameObject.tag == "Enemy")
