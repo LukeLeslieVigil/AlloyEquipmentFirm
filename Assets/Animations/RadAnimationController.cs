@@ -16,6 +16,7 @@ public class RadAnimationController : MonoBehaviour
     {
         if (Input.GetKey("w"))
         {
+            //when pressing a direction button, plays walking animation
             anim.SetBool("isWalking", true);
         }
 
