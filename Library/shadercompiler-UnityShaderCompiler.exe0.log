@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 Base path: 'C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/2019.4.29f1/Editor/Data', plugins path 'C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/2019.4.29f1/Editor/Data/PlaybackEngines'
+=======
+Base path: 'D:/Unity/Unity Editors/2019.4.29f1/Editor/Data', plugins path 'D:/Unity/Unity Editors/2019.4.29f1/Editor/Data/PlaybackEngines'
+>>>>>>> main
 Cmd: initializeCompiler
 Cmd: shutdown
