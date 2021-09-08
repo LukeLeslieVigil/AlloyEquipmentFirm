@@ -24,5 +24,8 @@ public class RadAnimationController : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
         }
+
+        //run this line of code when player gets caught
+        //if(playerCaught = true {anim.SetBool("isCaught", true);}
     }
 }
