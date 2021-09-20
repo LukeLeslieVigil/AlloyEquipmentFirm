@@ -5,21 +5,26 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject[] waypoints;
-    int currentWP = 0;
+    //int currentWP = 0;
 
-    public float speed = 10.0f;
-    public float rotSpeed = 10.0f;
+    //public float speed = 10.0f;
+    //public float rotSpeed = 10.0f;
 
-    // Start is called before the first frame update
+    UnityEngine.AI.NavMeshAgent agent;
+
     void Start()
     {
-
+        agent = this.GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
+    public void GoToWaypoints()
+    {
+        agent.SetDestination(waypoints[0].transform.position);
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(this.transform.position, waypoints[currentWP].transform.position) < 0.25)
+       /* if (Vector3.Distance(this.transform.position, waypoints[currentWP].transform.position) < 0.25)
             currentWP++;
 
         if (currentWP >= waypoints.Length)
@@ -31,6 +36,6 @@ public class Enemy : MonoBehaviour
 
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation, lookatWP, rotSpeed * Time.deltaTime);
 
-        this.transform.Translate(0, 0, speed * Time.deltaTime);
+        this.transform.Translate(0, 0, speed * Time.deltaTime);*/
     }
 }
