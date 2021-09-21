@@ -67,10 +67,10 @@ public class PlayerController : MonoBehaviour
                 Time.timeScale = 0;
             }         
         }
-        if (collision.gameObject.tag == "Enemy")
+        /*if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("You've been caught! Game over.");
             Time.timeScale = 0;
-        }
+        }*/
     }
 }

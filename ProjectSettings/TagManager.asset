@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shake
   - Enemy
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
