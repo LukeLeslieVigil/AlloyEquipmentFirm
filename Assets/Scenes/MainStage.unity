@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25038,6 +25038,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[21]
       value: 
       objectReference: {fileID: 738766393}
+    - target: {fileID: 3349735897540374189, guid: 838c410525c484f438c1c5378daf168b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1802348345}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 838c410525c484f438c1c5378daf168b, type: 3}
 --- !u!4 &1163062660 stripped
@@ -29161,6 +29166,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[17]
       value: 
       objectReference: {fileID: 1959318478}
+    - target: {fileID: 3349735897540374189, guid: 838c410525c484f438c1c5378daf168b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1802348345}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 838c410525c484f438c1c5378daf168b, type: 3}
 --- !u!4 &1325233414 stripped
@@ -44496,6 +44506,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 879050276}
     m_Modifications:
+    - target: {fileID: -4913061049923818857, guid: 838c410525c484f438c1c5378daf168b,
+        type: 3}
+      propertyPath: m_WalkableMask
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 385104578064716514, guid: 838c410525c484f438c1c5378daf168b,
         type: 3}
       propertyPath: m_RootOrder
@@ -44641,6 +44656,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[15]
       value: 
       objectReference: {fileID: 2119847013}
+    - target: {fileID: 3349735897540374189, guid: 838c410525c484f438c1c5378daf168b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1802348345}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 838c410525c484f438c1c5378daf168b, type: 3}
 --- !u!1001 &554642342329792089
