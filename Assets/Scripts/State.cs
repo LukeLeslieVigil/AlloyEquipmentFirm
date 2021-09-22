@@ -23,13 +23,13 @@ public class State
     protected NavMeshAgent agent;
 
     float visDist = 3.0f;
-    float visAngle = 90.0f;
-    float attackDist = 1f;
+    float visAngle = 70.0f;
+    float attackDist = 0.5f;
 
     public State(GameObject _npc, NavMeshAgent _agent, Transform _player)
     {
         npc = _npc;
-        agent = _agent;        
+        agent = _agent;
         stage = EVENT.ENTER;
         player = _player;
     }
@@ -97,7 +97,7 @@ public class Idle : State
         {
             nextState = new Patrol(npc, agent, player);
             stage = EVENT.EXIT;
-        }        
+        }
     }
 
     public override void Exit()
@@ -106,7 +106,7 @@ public class Idle : State
     }
 }
 
-public class Patrol: State
+public class Patrol : State
 {
     int currentIndex = -1;
 
@@ -197,18 +197,18 @@ public class Attack : State
     }
 
     public override void Enter()
-    {            
-        base.Enter();              
+    {
+        base.Enter();
     }
 
     public override void Update()
     {
         var distance = Vector3.Distance(player.position, npc.transform.position);
         if (distance <= 1f)
-        {            
+        {
             nextState = new Idle(npc, agent, player);
-            stage = EVENT.EXIT;            
-        }            
+            stage = EVENT.EXIT;
+        }
     }
 
     public override void Exit()
